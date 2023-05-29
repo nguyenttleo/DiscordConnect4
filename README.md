@@ -42,7 +42,7 @@ To set up and use the DiscordConnect4 project, follow these steps:
 1. Clone the project repository:
 
    ```bash
-   git clone https://github.com/your-username/DiscordConnect4.git
+   git clone https://github.com/nguyenttleo/DiscordConnect4.git
    ```
 
 2. Install the required dependencies:
