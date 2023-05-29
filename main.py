@@ -17,8 +17,8 @@ r = open("newboard.txt", "r", encoding="utf-8")
 n = open("newboard.txt", "r", encoding="utf-8")
 
 load_dotenv()
-TOKEN = 'ODI0ODQ4ODE3MTA3MTA3ODUw.YF1WUg.xeDTgrpgkLKymU_sRIEomFzmW_I'
-GUILD = 'League'
+TOKEN = 'YOUR-TOKEN'
+GUILD = 'YOUR-SERVER-NAME'
 
 client = discord.Client()
 
@@ -65,29 +65,29 @@ async def on_message(message):
             os.execv(sys.executable, ['python'] + sys.argv)
 
 
-# def gameLoop():
-#     gameOver = False
-#     game1 = g.c4Game(7, 6)
-#
-#     game1.createBoard()
-#     game1.readBoard()
-#     game1.drawBoard()
-#
-#     async def send():
-#         await client.get_channel("499426408213381132").send(game1.tweetBoard())
-#
-#     while not gameOver:
-#         @client.event
-#         async def on_message(message):
-#             color = message.split(" ")[0]
-#             column = message.split(" ")[1]
-#             game1.placePiece(int(column), color)
-#             game1.winDetection()
-#             game1.drawBoard()
-#             await message.channel.send(game1.tweetBoard())
-#
-#         if game1.winDetection() == 1:
-#             gameOver = True
+def gameLoop():
+    gameOver = False
+    game1 = g.c4Game(7, 6)
+
+    game1.createBoard()
+    game1.readBoard()
+    game1.drawBoard()
+
+    async def send():
+        await client.get_channel("499426408213381132").send(game1.tweetBoard())
+
+    while not gameOver:
+        @client.event
+        async def on_message(message):
+            color = message.split(" ")[0]
+            column = message.split(" ")[1]
+            game1.placePiece(int(column), color)
+            game1.winDetection()
+            game1.drawBoard()
+            await message.channel.send(game1.tweetBoard())
+
+        if game1.winDetection() == 1:
+            gameOver = True
 
 
 client.run(TOKEN)
