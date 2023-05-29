@@ -3,5 +3,4 @@ Game Over!
 
 Use !.c4reset to clear the board.
 Use (start) new c4 to start a new game after the board has been cleared.
-Use /.epic for the Bee Movie script.
 ```
