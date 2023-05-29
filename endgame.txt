@@ -3,7 +3,5 @@ Game Over!
 
 Use !.c4reset to clear the board.
 Use (start) new c4 to start a new game after the board has been cleared.
-Use /.harnoor if you are in need of a religious awakening.
-Use /.baldo if you're horny.
 Use /.epic for the Bee Movie script.
 ```
