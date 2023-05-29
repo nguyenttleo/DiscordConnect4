@@ -1,0 +1,7 @@
+```asciidoc
+= Welcome to Connect4 =
+
+[Use !.c4 (color) (column) to place a piece.]
+[Use !.c4reset to clear the board.]
+
+```
